@@ -1,0 +1,25 @@
+{
+  "name": "opageviewcontroller",
+  "version": "0.4.0",
+  "summary": "OPageViewControler lets you embed multiple UIViewControllers.",
+  "description": "OPageViewControler lets you embed multiple UIViewControllers and access them based on swipe/ tap on controller's title in container Controller with Title Tab",
+  "homepage": "https://Abhishek021Singh@bitbucket.org/jiomoney/opageviewcontroller",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Abhishek Singh": "abhishek21.singh@ril.com"
+  },
+  "source": {
+    "git": "https://Abhishek021Singh@bitbucket.org/jiomoney/opageviewcontroller.git",
+    "tag": "0.4.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "opageviewcontroller/Classes/**/*",
+  "ios": {
+    "vendored_frameworks": "opageviewcontroller.framework"
+  }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - opageviewcontroller (0.4.0)
+
+DEPENDENCIES:
+  - opageviewcontroller (from `../`)
+
+EXTERNAL SOURCES:
+  opageviewcontroller:
+    :path: ../
+
+SPEC CHECKSUMS:
+  opageviewcontroller: bc31294302a4060ba1b3270d13fa0ec669836a7c
+
+PODFILE CHECKSUM: 4a525d4948b7d0098a48d11d9b90c57d67109d0e
+
+COCOAPODS: 1.2.1

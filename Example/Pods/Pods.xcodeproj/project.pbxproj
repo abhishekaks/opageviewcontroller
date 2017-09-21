@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0808EE45019C8E987BB5A659B9D48D3A /* OPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61C327606C5C0FED788070591C2D16A /* OPageViewController.swift */; };
+		1FBC4472B24E9B222A14FD789444E8C0 /* Pods-opageviewcontroller_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B68531C2D9469BD47E2719702C91B8 /* Pods-opageviewcontroller_Tests-dummy.m */; };
+		29CB3E75BEEA1E17683ECA3F8467434A /* OPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1D5C5BFA35339AFCE52D652C21AC16 /* OPage.swift */; };
+		3693A26B72869DB80A417535B2D7BFDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7157500113EC9A580BA0A2B96EB622D0 /* Pods-opageviewcontroller_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFE5908BF0864C64B665F876DB07F03 /* Pods-opageviewcontroller_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B98B5090B02AD9B2F1A6ED39EAAAB20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7E32D1EA885DB03A59418F01AD6F8511 /* Pods-opageviewcontroller_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BC09C82106C9774C70FD2EA3DDA63F /* Pods-opageviewcontroller_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0C3341B17955E13F8E4C83E27DC1E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AF1B6BFCEC02397BC81A545873EFD136 /* OPageViewTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644183A21C55E538A95D3982002F8BDA /* OPageViewTitles.swift */; };
+		B057458B683EA0128C0B129E7901C038 /* Pods-opageviewcontroller_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE4704EF4E562A04D10BEB93BBBB54F /* Pods-opageviewcontroller_Example-dummy.m */; };
+		BDB85202B3E9289702C5E638A2EF8EBE /* OPageViewTitleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736906DB75AC069D95A9D8D9523E6A26 /* OPageViewTitleUI.swift */; };
+		C09A34DC6FECDD3BA34D4C85AF8B78CC /* opageviewcontroller-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0794590A1BC172246EEC90D7EC1B8B1D /* opageviewcontroller-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA4BCB49542488C8A449FDDEAD5B799 /* OPageViewTitles.xib in Sources */ = {isa = PBXBuildFile; fileRef = 61231713CC180E124255468109F9D0BC /* OPageViewTitles.xib */; };
+		D16AD3AD28F3C885FF335BDC75EE5761 /* opageviewcontroller-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D218FA698917194AF5989F9EB8B55D /* opageviewcontroller-dummy.m */; };
+		D4C7B87783F9E989F085F7C25AE5F439 /* OPageTitleCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 073BA703F065A6640E5B84C5739D6B4E /* OPageTitleCell.xib */; };
+		E49E623C71BB54B4D6AC4FA29B6752B3 /* OPageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47FE72C40D9843D5124A96ED26DF3D /* OPageTitleCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C9979DB0FAAFC2FA77199905C0297DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23C0FBEB03D890D524292957F8B2FD3C;
+			remoteInfo = opageviewcontroller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073BA703F065A6640E5B84C5739D6B4E /* OPageTitleCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OPageTitleCell.xib; sourceTree = "<group>"; };
+		0794590A1BC172246EEC90D7EC1B8B1D /* opageviewcontroller-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "opageviewcontroller-umbrella.h"; sourceTree = "<group>"; };
+		15946B6B5E972AA3F532456867FB96EB /* opageviewcontroller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = opageviewcontroller.framework; path = opageviewcontroller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DABE25E6FDFCEF3F32B9C34C650964 /* Pods-opageviewcontroller_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-opageviewcontroller_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		23E90D8734C21AC7E163FA137955F3FE /* Pods-opageviewcontroller_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		25E6A4AEE867D2FBE9BDC7DDE401E3A2 /* Pods-opageviewcontroller_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-opageviewcontroller_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A2CDE2E5EB6A6A31FEEAEF5FF2D38AC /* opageviewcontroller.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = opageviewcontroller.xcconfig; sourceTree = "<group>"; };
+		31E0571E04F39F06AFF20A7A16B9973E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C097C149A4DDC9CB56131734A477902 /* Pods-opageviewcontroller_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Example.release.xcconfig"; sourceTree = "<group>"; };
+		42D218FA698917194AF5989F9EB8B55D /* opageviewcontroller-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "opageviewcontroller-dummy.m"; sourceTree = "<group>"; };
+		53BC09C82106C9774C70FD2EA3DDA63F /* Pods-opageviewcontroller_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-opageviewcontroller_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5BD6A05B30CE2867C72792135CE2E34A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E1D5C5BFA35339AFCE52D652C21AC16 /* OPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPage.swift; sourceTree = "<group>"; };
+		61231713CC180E124255468109F9D0BC /* OPageViewTitles.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OPageViewTitles.xib; sourceTree = "<group>"; };
+		644183A21C55E538A95D3982002F8BDA /* OPageViewTitles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageViewTitles.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		736906DB75AC069D95A9D8D9523E6A26 /* OPageViewTitleUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageViewTitleUI.swift; sourceTree = "<group>"; };
+		8482CC88FE07C4C61649A6215E5D192F /* Pods_opageviewcontroller_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_opageviewcontroller_Example.framework; path = "Pods-opageviewcontroller_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DD8C56D4916004C3A8D7C80B666053 /* Pods-opageviewcontroller_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		88A4072F85DD8E46D28D47FD0C44EDDC /* Pods-opageviewcontroller_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-opageviewcontroller_Example.modulemap"; sourceTree = "<group>"; };
+		8BE4704EF4E562A04D10BEB93BBBB54F /* Pods-opageviewcontroller_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-opageviewcontroller_Example-dummy.m"; sourceTree = "<group>"; };
+		8F9C879612BCD989C262FB5F12C7B0C0 /* Pods-opageviewcontroller_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950DBEA3917EB51B40081E9444E821E4 /* Pods-opageviewcontroller_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-opageviewcontroller_Tests.modulemap"; sourceTree = "<group>"; };
+		A61C327606C5C0FED788070591C2D16A /* OPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageViewController.swift; sourceTree = "<group>"; };
+		AB9091C6280F5C78B30FCF839097011C /* Pods-opageviewcontroller_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ABD743E2459511774B2546102C1AE1E7 /* opageviewcontroller.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = opageviewcontroller.modulemap; sourceTree = "<group>"; };
+		B1BAF19E201A6EE64D6549FE32051FD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38260A11F478C390C0B4C943EE9A298 /* opageviewcontroller-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "opageviewcontroller-prefix.pch"; sourceTree = "<group>"; };
+		CC47FE72C40D9843D5124A96ED26DF3D /* OPageTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageTitleCell.swift; sourceTree = "<group>"; };
+		CE365F2D152CB50E727ADEBEA21363E0 /* Pods-opageviewcontroller_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Tests-resources.sh"; sourceTree = "<group>"; };
+		D6B68531C2D9469BD47E2719702C91B8 /* Pods-opageviewcontroller_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-opageviewcontroller_Tests-dummy.m"; sourceTree = "<group>"; };
+		DFA0A7FC3C7E9ECC434095E0FFA8B4CC /* Pods-opageviewcontroller_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-opageviewcontroller_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E04A6D7FFD9CE4DD7705F8C97B81F36B /* Pods_opageviewcontroller_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_opageviewcontroller_Tests.framework; path = "Pods-opageviewcontroller_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05A7049E7B219FDF6E85DFF5E0F290A /* Pods-opageviewcontroller_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-opageviewcontroller_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F345EC01EC9791BFC72FB34CE13AE14E /* Pods-opageviewcontroller_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F9D49AEE0A514A47D16AB6E7FADA5546 /* Pods-opageviewcontroller_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Example-resources.sh"; sourceTree = "<group>"; };
+		FFFE5908BF0864C64B665F876DB07F03 /* Pods-opageviewcontroller_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-opageviewcontroller_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		292F4899D55E05A3C816D985644AA200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0C3341B17955E13F8E4C83E27DC1E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFCC847CB3E4F5E082EF0B7A1F2D1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3693A26B72869DB80A417535B2D7BFDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFAFE94604D928447226E7E54A664F66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B98B5090B02AD9B2F1A6ED39EAAAB20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1167D90206A1676864EE014EA0C241CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1BAF19E201A6EE64D6549FE32051FD5 /* Info.plist */,
+				ABD743E2459511774B2546102C1AE1E7 /* opageviewcontroller.modulemap */,
+				2A2CDE2E5EB6A6A31FEEAEF5FF2D38AC /* opageviewcontroller.xcconfig */,
+				42D218FA698917194AF5989F9EB8B55D /* opageviewcontroller-dummy.m */,
+				B38260A11F478C390C0B4C943EE9A298 /* opageviewcontroller-prefix.pch */,
+				0794590A1BC172246EEC90D7EC1B8B1D /* opageviewcontroller-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/opageviewcontroller";
+			sourceTree = "<group>";
+		};
+		1BDC720DE5439E4E9FA4F441F3484330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15946B6B5E972AA3F532456867FB96EB /* opageviewcontroller.framework */,
+				8482CC88FE07C4C61649A6215E5D192F /* Pods_opageviewcontroller_Example.framework */,
+				E04A6D7FFD9CE4DD7705F8C97B81F36B /* Pods_opageviewcontroller_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26CE0DD93ED906C45A50EE4BAA3F5D1F /* Pods-opageviewcontroller_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5BD6A05B30CE2867C72792135CE2E34A /* Info.plist */,
+				950DBEA3917EB51B40081E9444E821E4 /* Pods-opageviewcontroller_Tests.modulemap */,
+				DFA0A7FC3C7E9ECC434095E0FFA8B4CC /* Pods-opageviewcontroller_Tests-acknowledgements.markdown */,
+				25E6A4AEE867D2FBE9BDC7DDE401E3A2 /* Pods-opageviewcontroller_Tests-acknowledgements.plist */,
+				D6B68531C2D9469BD47E2719702C91B8 /* Pods-opageviewcontroller_Tests-dummy.m */,
+				84DD8C56D4916004C3A8D7C80B666053 /* Pods-opageviewcontroller_Tests-frameworks.sh */,
+				CE365F2D152CB50E727ADEBEA21363E0 /* Pods-opageviewcontroller_Tests-resources.sh */,
+				53BC09C82106C9774C70FD2EA3DDA63F /* Pods-opageviewcontroller_Tests-umbrella.h */,
+				23E90D8734C21AC7E163FA137955F3FE /* Pods-opageviewcontroller_Tests.debug.xcconfig */,
+				8F9C879612BCD989C262FB5F12C7B0C0 /* Pods-opageviewcontroller_Tests.release.xcconfig */,
+			);
+			name = "Pods-opageviewcontroller_Tests";
+			path = "Target Support Files/Pods-opageviewcontroller_Tests";
+			sourceTree = "<group>";
+		};
+		4024E6F6E6FA6D36CD85848577CB64E4 /* Pods-opageviewcontroller_Example */ = {
+			isa = PBXGroup;
+			children = (
+				31E0571E04F39F06AFF20A7A16B9973E /* Info.plist */,
+				88A4072F85DD8E46D28D47FD0C44EDDC /* Pods-opageviewcontroller_Example.modulemap */,
+				F05A7049E7B219FDF6E85DFF5E0F290A /* Pods-opageviewcontroller_Example-acknowledgements.markdown */,
+				21DABE25E6FDFCEF3F32B9C34C650964 /* Pods-opageviewcontroller_Example-acknowledgements.plist */,
+				8BE4704EF4E562A04D10BEB93BBBB54F /* Pods-opageviewcontroller_Example-dummy.m */,
+				F345EC01EC9791BFC72FB34CE13AE14E /* Pods-opageviewcontroller_Example-frameworks.sh */,
+				F9D49AEE0A514A47D16AB6E7FADA5546 /* Pods-opageviewcontroller_Example-resources.sh */,
+				FFFE5908BF0864C64B665F876DB07F03 /* Pods-opageviewcontroller_Example-umbrella.h */,
+				AB9091C6280F5C78B30FCF839097011C /* Pods-opageviewcontroller_Example.debug.xcconfig */,
+				3C097C149A4DDC9CB56131734A477902 /* Pods-opageviewcontroller_Example.release.xcconfig */,
+			);
+			name = "Pods-opageviewcontroller_Example";
+			path = "Target Support Files/Pods-opageviewcontroller_Example";
+			sourceTree = "<group>";
+		};
+		44EDB24B6B3E634C32AD4A1BBE375A3E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5E1D5C5BFA35339AFCE52D652C21AC16 /* OPage.swift */,
+				CC47FE72C40D9843D5124A96ED26DF3D /* OPageTitleCell.swift */,
+				073BA703F065A6640E5B84C5739D6B4E /* OPageTitleCell.xib */,
+				A61C327606C5C0FED788070591C2D16A /* OPageViewController.swift */,
+				644183A21C55E538A95D3982002F8BDA /* OPageViewTitles.swift */,
+				61231713CC180E124255468109F9D0BC /* OPageViewTitles.xib */,
+				736906DB75AC069D95A9D8D9523E6A26 /* OPageViewTitleUI.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EDE825D54B40A4D9E5F92226389E2C6C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1BDC720DE5439E4E9FA4F441F3484330 /* Products */,
+				F5334CEFF1C909505EA3C88E32407576 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A36C8C37D6F64D25DE6B9C8CA66A1CB /* opageviewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				44EDB24B6B3E634C32AD4A1BBE375A3E /* Classes */,
+			);
+			name = opageviewcontroller;
+			path = opageviewcontroller;
+			sourceTree = "<group>";
+		};
+		B037EA0D44FAC7E59B5A9F025E9C4C4C /* opageviewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				9A36C8C37D6F64D25DE6B9C8CA66A1CB /* opageviewcontroller */,
+				1167D90206A1676864EE014EA0C241CC /* Support Files */,
+			);
+			name = opageviewcontroller;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EDE825D54B40A4D9E5F92226389E2C6C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B037EA0D44FAC7E59B5A9F025E9C4C4C /* opageviewcontroller */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F5334CEFF1C909505EA3C88E32407576 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4024E6F6E6FA6D36CD85848577CB64E4 /* Pods-opageviewcontroller_Example */,
+				26CE0DD93ED906C45A50EE4BAA3F5D1F /* Pods-opageviewcontroller_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0839C1B3F93FC0456D962F9F71DC96D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7157500113EC9A580BA0A2B96EB622D0 /* Pods-opageviewcontroller_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45149176F9B0AB387F591A00A9A9F3C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09A34DC6FECDD3BA34D4C85AF8B78CC /* opageviewcontroller-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A186EE2D5F0FC865518160CDF4B1ABF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E32D1EA885DB03A59418F01AD6F8511 /* Pods-opageviewcontroller_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04C51709A501203E5A710F41D3CC005F /* Pods-opageviewcontroller_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98BF531C19F93C298C3328D6A242A898 /* Build configuration list for PBXNativeTarget "Pods-opageviewcontroller_Tests" */;
+			buildPhases = (
+				0D99B3EF9ADC02E51DAA3B508753C5F9 /* Sources */,
+				292F4899D55E05A3C816D985644AA200 /* Frameworks */,
+				A186EE2D5F0FC865518160CDF4B1ABF3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-opageviewcontroller_Tests";
+			productName = "Pods-opageviewcontroller_Tests";
+			productReference = E04A6D7FFD9CE4DD7705F8C97B81F36B /* Pods_opageviewcontroller_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23C0FBEB03D890D524292957F8B2FD3C /* opageviewcontroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792CE5827B7E53B0E00716894A05F868 /* Build configuration list for PBXNativeTarget "opageviewcontroller" */;
+			buildPhases = (
+				BFE33A15F7BCE64DB59DD2DF121BDB93 /* Sources */,
+				EFAFE94604D928447226E7E54A664F66 /* Frameworks */,
+				45149176F9B0AB387F591A00A9A9F3C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opageviewcontroller;
+			productName = opageviewcontroller;
+			productReference = 15946B6B5E972AA3F532456867FB96EB /* opageviewcontroller.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE16B11EE403A269AF2ECB2FDC5B5521 /* Pods-opageviewcontroller_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 102A7044BE5CCDB1B14DAAABB6B4092C /* Build configuration list for PBXNativeTarget "Pods-opageviewcontroller_Example" */;
+			buildPhases = (
+				186BD53B00D5482AE18565A7D3DE94EF /* Sources */,
+				8BFCC847CB3E4F5E082EF0B7A1F2D1E5 /* Frameworks */,
+				0839C1B3F93FC0456D962F9F71DC96D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D34306FE3D758BA2C7E9D68FB55EFDF /* PBXTargetDependency */,
+			);
+			name = "Pods-opageviewcontroller_Example";
+			productName = "Pods-opageviewcontroller_Example";
+			productReference = 8482CC88FE07C4C61649A6215E5D192F /* Pods_opageviewcontroller_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1BDC720DE5439E4E9FA4F441F3484330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23C0FBEB03D890D524292957F8B2FD3C /* opageviewcontroller */,
+				AE16B11EE403A269AF2ECB2FDC5B5521 /* Pods-opageviewcontroller_Example */,
+				04C51709A501203E5A710F41D3CC005F /* Pods-opageviewcontroller_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D99B3EF9ADC02E51DAA3B508753C5F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FBC4472B24E9B222A14FD789444E8C0 /* Pods-opageviewcontroller_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186BD53B00D5482AE18565A7D3DE94EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B057458B683EA0128C0B129E7901C038 /* Pods-opageviewcontroller_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE33A15F7BCE64DB59DD2DF121BDB93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CB3E75BEEA1E17683ECA3F8467434A /* OPage.swift in Sources */,
+				E49E623C71BB54B4D6AC4FA29B6752B3 /* OPageTitleCell.swift in Sources */,
+				D4C7B87783F9E989F085F7C25AE5F439 /* OPageTitleCell.xib in Sources */,
+				D16AD3AD28F3C885FF335BDC75EE5761 /* opageviewcontroller-dummy.m in Sources */,
+				0808EE45019C8E987BB5A659B9D48D3A /* OPageViewController.swift in Sources */,
+				AF1B6BFCEC02397BC81A545873EFD136 /* OPageViewTitles.swift in Sources */,
+				CEA4BCB49542488C8A449FDDEAD5B799 /* OPageViewTitles.xib in Sources */,
+				BDB85202B3E9289702C5E638A2EF8EBE /* OPageViewTitleUI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D34306FE3D758BA2C7E9D68FB55EFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = opageviewcontroller;
+			target = 23C0FBEB03D890D524292957F8B2FD3C /* opageviewcontroller */;
+			targetProxy = 1C9979DB0FAAFC2FA77199905C0297DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F0B511D9936093A7FFCD7EA526A28DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9C879612BCD989C262FB5F12C7B0C0 /* Pods-opageviewcontroller_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-opageviewcontroller_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-opageviewcontroller_Tests/Pods-opageviewcontroller_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_opageviewcontroller_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81822D01F9D468E928D257B18580303B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2CDE2E5EB6A6A31FEEAEF5FF2D38AC /* opageviewcontroller.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/opageviewcontroller/opageviewcontroller-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/opageviewcontroller/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/opageviewcontroller/opageviewcontroller.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = opageviewcontroller;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9BC564ED72580EDF14997B5CAAF1C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E90D8734C21AC7E163FA137955F3FE /* Pods-opageviewcontroller_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-opageviewcontroller_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-opageviewcontroller_Tests/Pods-opageviewcontroller_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_opageviewcontroller_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C88ECB7074810DB08177901B1C1E0E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A2CDE2E5EB6A6A31FEEAEF5FF2D38AC /* opageviewcontroller.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/opageviewcontroller/opageviewcontroller-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/opageviewcontroller/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/opageviewcontroller/opageviewcontroller.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = opageviewcontroller;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDE8FC207DB9A4063900402C6E86AE7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9091C6280F5C78B30FCF839097011C /* Pods-opageviewcontroller_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-opageviewcontroller_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-opageviewcontroller_Example/Pods-opageviewcontroller_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_opageviewcontroller_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E736627100CF185D3C2E4F8B2F3D4212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C097C149A4DDC9CB56131734A477902 /* Pods-opageviewcontroller_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-opageviewcontroller_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-opageviewcontroller_Example/Pods-opageviewcontroller_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_opageviewcontroller_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		102A7044BE5CCDB1B14DAAABB6B4092C /* Build configuration list for PBXNativeTarget "Pods-opageviewcontroller_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8FC207DB9A4063900402C6E86AE7D /* Debug */,
+				E736627100CF185D3C2E4F8B2F3D4212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792CE5827B7E53B0E00716894A05F868 /* Build configuration list for PBXNativeTarget "opageviewcontroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88ECB7074810DB08177901B1C1E0E97 /* Debug */,
+				81822D01F9D468E928D257B18580303B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98BF531C19F93C298C3328D6A242A898 /* Build configuration list for PBXNativeTarget "Pods-opageviewcontroller_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BC564ED72580EDF14997B5CAAF1C66 /* Debug */,
+				1F0B511D9936093A7FFCD7EA526A28DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

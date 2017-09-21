@@ -1,0 +1,6 @@
+framework module opageviewcontroller {
+  umbrella header "opageviewcontroller-umbrella.h"
+
+  export *
+  module * { export * }
+}
