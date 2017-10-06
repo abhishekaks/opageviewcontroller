@@ -39,7 +39,7 @@ class OPageViewTitles: UICollectionView {
     }
     
     private func registerCells(){
-        self.register(UINib.init(nibName: "OPageTitleCell", bundle: Bundle(for: self.classForCoder)), forCellWithReuseIdentifier: OPageViewTitles.kTitleCellIdentifier)
+        self.register(UINib.init(nibName: "OPageTitleCell", bundle: Bundle(for: OPageViewTitles.classForCoder())), forCellWithReuseIdentifier: OPageViewTitles.kTitleCellIdentifier)
     }
     
     fileprivate func getItemSizeFromNumber(of items:Int) -> CGSize{

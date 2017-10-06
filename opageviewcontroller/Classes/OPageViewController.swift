@@ -44,7 +44,7 @@ open class OPageViewController: UIViewController {
     }
     
     private func layoutTitleView(){
-        titlesView = Bundle(for: self.classForCoder).loadNibNamed("OPageViewTitles", owner: self, options: nil)?.first as? OPageViewTitles
+        titlesView = Bundle(for: OPageViewTitles.classForCoder()).loadNibNamed("OPageViewTitles", owner: self, options: nil)?.first as? OPageViewTitles
         titlesView!.translatesAutoresizingMaskIntoConstraints = false
         titlesView!.pages = pages
         titlesView!.customDelegate = self
