@@ -17,7 +17,7 @@ public protocol OPageViewControllerDelegate:class {
     func OPageVC(_ oPageVC:OPageViewController, didSelectItemAt index:Int, page:OPage)
 }
 
-public class OPageViewController: UIViewController {
+open class OPageViewController: UIViewController {
 
     private var pageVC:UIPageViewController?
     fileprivate var titlesView:OPageViewTitles?
@@ -28,7 +28,7 @@ public class OPageViewController: UIViewController {
     public var uiConfig:OPageViewTitleUI = OPageViewTitleUI()
     public weak var delegate:OPageViewControllerDelegate?
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
@@ -108,7 +108,7 @@ public class OPageViewController: UIViewController {
         }
     }
     
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
