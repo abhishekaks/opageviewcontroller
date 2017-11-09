@@ -19,6 +19,9 @@ struct OPageViewTitlesData {
     let indicatorColor:UIColor
     let title:String
     let model : AnyObject?
+    let constraintTrailingIndicator:Float
+    let rightSeparatorColor:UIColor
+    let leftSeparatorColor:UIColor
     
     init(hideBottomSeparator: Bool,
          hideRightSeparator: Bool,
@@ -28,7 +31,10 @@ struct OPageViewTitlesData {
          titleFont:UIFont,
          indicatorColor:UIColor,
          title:String,
-         model : AnyObject?) {
+         model : AnyObject?,
+         constraintTrailingIndicator:Float = 0,
+         rightSeparatorColor:UIColor,
+         leftSeparatorColor:UIColor) {
         self.hideBottomSeparator = hideBottomSeparator
         self.hideRightSeparator = hideRightSeparator
         self.hideLeftSeparator = hideLeftSeparator
@@ -38,6 +44,9 @@ struct OPageViewTitlesData {
         self.indicatorColor = indicatorColor
         self.title = title
         self.model = model
+        self.constraintTrailingIndicator = constraintTrailingIndicator
+        self.rightSeparatorColor = rightSeparatorColor
+        self.leftSeparatorColor = leftSeparatorColor
     }
 }
 
@@ -47,7 +56,8 @@ class OPageTitleCell: UICollectionViewCell {
     @IBOutlet weak var leftSeparator: UIView!
     @IBOutlet weak var rightSeparator: UIView!
     @IBOutlet weak var lblTitle: UILabel!
-
+    @IBOutlet weak var constraintTrailingIndicator: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCell()
@@ -57,9 +67,12 @@ class OPageTitleCell: UICollectionViewCell {
     }
     
     public func configureWithData(_ data:OPageViewTitlesData) {
+        constraintTrailingIndicator.constant = CGFloat(data.constraintTrailingIndicator)
         bottomSeparator.isHidden = data.hideBottomSeparator
         rightSeparator.isHidden = data.hideRightSeparator
+        rightSeparator.backgroundColor = data.rightSeparatorColor
         leftSeparator.isHidden = data.hideLeftSeparator
+        leftSeparator.backgroundColor = data.leftSeparatorColor
         selectedIndicatorV.isHidden = !data.isSelected
         selectedIndicatorV.backgroundColor = data.indicatorColor
         lblTitle.text = data.title

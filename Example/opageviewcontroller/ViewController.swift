@@ -42,8 +42,15 @@ class ViewController: UIViewController {
         page = OPage.init(title:"VC3", viewController: vcThree)
         pages.append(page)
         
+        // Fourth View Controller
+        let vcFour:UIViewController = UIViewController.init()
+        vcFour.view.backgroundColor = UIColor.cyan
+        page = OPage.init(title:"VC4", viewController: vcFour)
+        pages.append(page)
         
-        let pageController: OPageViewController = OPageViewController.init()
+        let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.5)
+        pageController.uiConfig.rightSeparatorColor = UIColor.clear
+        pageController.uiConfig.leftSeparatorColor = UIColor.clear
         pageController.pages = pages
         
         if let navController:UINavigationController = self.navigationController{

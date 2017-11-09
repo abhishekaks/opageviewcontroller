@@ -17,6 +17,16 @@ public protocol OPageViewControllerDelegate:class {
     func OPageVC(_ oPageVC:OPageViewController, didSelectItemAt index:Int, page:OPage)
 }
 
+public enum OPageTitleBounds {
+    /* Description: The Title View width is same as parent View Controller.
+     Width is equally devided between items. */
+    case fixed
+    
+    /* Description: The Title View can stretch beyond View Controller's bound
+     on the right. Width is configurable */
+    case stretchable
+}
+
 open class OPageViewController: UIViewController {
 
     private var pageVC:UIPageViewController?
@@ -27,10 +37,22 @@ open class OPageViewController: UIViewController {
     public var pageType:OPageViewControllerType = .cyclic
     public var uiConfig:OPageViewTitleUI = OPageViewTitleUI()
     public weak var delegate:OPageViewControllerDelegate?
-    
+
     override open func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+    }
+    
+    public init(pageTitleBounds:OPageTitleBounds = .fixed, titleItemWidth:Float = 90, titleItemHeight:Float = 50, indicatorWidthRatio:Float = 1) {
+        uiConfig.pageTitleBounds = pageTitleBounds
+        uiConfig.titleItemWidth = titleItemWidth
+        uiConfig.titleItemHeight = titleItemHeight
+        uiConfig.indicatorWidthRatio = indicatorWidthRatio
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     private func setupView(){
@@ -47,11 +69,13 @@ open class OPageViewController: UIViewController {
         titlesView = Bundle(for: OPageViewTitles.classForCoder()).loadNibNamed("OPageViewTitles", owner: self, options: nil)?.first as? OPageViewTitles
         titlesView!.translatesAutoresizingMaskIntoConstraints = false
         titlesView!.pages = pages
+        titlesView!.uiConfig = uiConfig
         titlesView!.customDelegate = self
         self.view.addSubview(titlesView!)
         
         let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[titlesView]-0-|", options: [], metrics: nil, views: ["titlesView":titlesView!])
-        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[titlesView(50)]", options: [], metrics: nil, views: ["titlesView":titlesView!])
+        let titleViewHeightConstraintStr = String(format: "V:|-0-[titlesView(%lf)]", uiConfig.titleItemHeight)
+        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: titleViewHeightConstraintStr, options: [], metrics: nil, views: ["titlesView":titlesView!])
         
         let allConstraints = hConstraints + vConstraints
         NSLayoutConstraint.activate(allConstraints)
