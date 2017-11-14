@@ -22,6 +22,7 @@ struct OPageViewTitlesData {
     let constraintTrailingIndicator:Float
     let rightSeparatorColor:UIColor
     let leftSeparatorColor:UIColor
+    let bottomSeparatorColor:UIColor
     
     init(hideBottomSeparator: Bool,
          hideRightSeparator: Bool,
@@ -34,7 +35,8 @@ struct OPageViewTitlesData {
          model : AnyObject?,
          constraintTrailingIndicator:Float = 0,
          rightSeparatorColor:UIColor,
-         leftSeparatorColor:UIColor) {
+         leftSeparatorColor:UIColor,
+         bottomSeparatorColor:UIColor) {
         self.hideBottomSeparator = hideBottomSeparator
         self.hideRightSeparator = hideRightSeparator
         self.hideLeftSeparator = hideLeftSeparator
@@ -47,6 +49,7 @@ struct OPageViewTitlesData {
         self.constraintTrailingIndicator = constraintTrailingIndicator
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
+        self.bottomSeparatorColor = bottomSeparatorColor
     }
 }
 
@@ -69,6 +72,7 @@ class OPageTitleCell: UICollectionViewCell {
     public func configureWithData(_ data:OPageViewTitlesData) {
         constraintTrailingIndicator.constant = CGFloat(data.constraintTrailingIndicator)
         bottomSeparator.isHidden = data.hideBottomSeparator
+        bottomSeparator.backgroundColor = data.bottomSeparatorColor
         rightSeparator.isHidden = data.hideRightSeparator
         rightSeparator.backgroundColor = data.rightSeparatorColor
         leftSeparator.isHidden = data.hideLeftSeparator

@@ -11,6 +11,7 @@ import UIKit
 public struct OPageViewTitleUI {
     public var rightSeparatorColor: UIColor
     public var leftSeparatorColor: UIColor
+    public var bottomSeparatorColor: UIColor
     public var titleColor: UIColor
     public var font:UIFont
     public var highlightedFont: UIFont
@@ -30,9 +31,11 @@ public struct OPageViewTitleUI {
          titleItemWidth:Float = Float.greatestFiniteMagnitude,
          titleItemHeight:Float = 50,
          indicatorWidthRatio:Float = 1,
-         leftSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0)) {
+         leftSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
+         bottomSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0)) {
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
+        self.bottomSeparatorColor = bottomSeparatorColor
         self.titleColor = titleColor
         self.font = font
         self.highlightedFont = highlightedFont

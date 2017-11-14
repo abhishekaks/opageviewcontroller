@@ -55,6 +55,10 @@ open class OPageViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
+    public func invalidate() {
+        setupView()
+    }
+    
     private func setupView(){
         if pages.count > 0 {
             self.edgesForExtendedLayout = [];

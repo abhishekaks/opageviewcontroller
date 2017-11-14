@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.5)
         pageController.uiConfig.rightSeparatorColor = UIColor.clear
         pageController.uiConfig.leftSeparatorColor = UIColor.clear
+        pageController.uiConfig.bottomSeparatorColor = UIColor.clear
         pageController.pages = pages
         
         if let navController:UINavigationController = self.navigationController{

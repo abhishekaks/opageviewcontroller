@@ -88,6 +88,7 @@ extension OPageViewTitles: UICollectionViewDataSource{
         let _indicatorColor:UIColor = _isSelected ? self.uiConfig.highlightedColor :self.uiConfig.titleColor
         let _rightSeparatorColor:UIColor = self.uiConfig.rightSeparatorColor
         let _leftSeparatorColor:UIColor = self.uiConfig.leftSeparatorColor
+        let _bottomSeparatorColor:UIColor = self.uiConfig.bottomSeparatorColor
         let selectedIndicatorFactor:Float = (self.uiConfig.indicatorWidthRatio <= 0 || self.uiConfig.indicatorWidthRatio == 1 || self.uiConfig.indicatorWidthRatio > 1) ? 0 : (1 - self.uiConfig.indicatorWidthRatio)
         let _selectedIndicatorTrailing:Float = Float(getItemSizeFromNumber(of: pages.count).width) * selectedIndicatorFactor
         
@@ -104,7 +105,8 @@ extension OPageViewTitles: UICollectionViewDataSource{
             model : page,
             constraintTrailingIndicator: _selectedIndicatorTrailing,
             rightSeparatorColor:_rightSeparatorColor,
-            leftSeparatorColor:_leftSeparatorColor)
+            leftSeparatorColor:_leftSeparatorColor,
+            bottomSeparatorColor:_bottomSeparatorColor)
         )
         return cell
     }
