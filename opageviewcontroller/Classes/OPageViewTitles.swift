@@ -16,6 +16,7 @@ class OPageViewTitles: UICollectionView {
     
     fileprivate static let kTitleCellIdentifier:String = "OPageTitleCell"
     fileprivate var selectedIndex:Int = 0
+    fileprivate let padding:CGFloat = 15.0
     
     public var pages:[OPage] = [OPage](){
         didSet{
@@ -26,6 +27,11 @@ class OPageViewTitles: UICollectionView {
     public var uiConfig:OPageViewTitleUI = OPageViewTitleUI(){
         didSet{
             self.isScrollEnabled = beyondBoundsMode()
+//            if let flowLayout:UICollectionViewFlowLayout = self.collectionViewLayout as? UICollectionViewFlowLayout {
+//                if #available(iOS 10.0, *) {
+//                    flowLayout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+//                }
+//            }
         }
     }
     
@@ -47,10 +53,24 @@ class OPageViewTitles: UICollectionView {
         self.register(UINib.init(nibName: "OPageTitleCell", bundle: Bundle(for: OPageViewTitles.classForCoder())), forCellWithReuseIdentifier: OPageViewTitles.kTitleCellIdentifier)
     }
     
-    fileprivate func getItemSizeFromNumber(of items:Int) -> CGSize{
+    fileprivate func getItemSizeFromNumber(of items:Int, indexPath:IndexPath) -> CGSize{
         var itemSize:CGSize = CGSize.zero
         if beyondBoundsMode() == true{
-            itemSize = CGSize(width: CGFloat(uiConfig.titleItemWidth), height: CGFloat(uiConfig.titleItemHeight))
+            
+            let width:Float = uiConfig.titleItemWidth
+            let height:Float = uiConfig.titleItemHeight
+            
+            if uiConfig.flexibleTitleWidth == true {
+                var titleSize:CGSize = CGSize.zero
+                if selectedIndex == indexPath.item {
+                    titleSize = (((pages[indexPath.item]).title) as NSString).size(attributes: [NSFontAttributeName: uiConfig.highlightedFont])
+                }else {
+                    titleSize = (((pages[indexPath.item]).title) as NSString).size(attributes: [NSFontAttributeName: uiConfig.font])
+                }
+                itemSize = CGSize(width: titleSize.width + padding, height: CGFloat(height))
+            }else{
+                itemSize = CGSize(width: CGFloat(width), height: CGFloat(height))
+            }
         }else{
             itemSize = defaultItemSize(for: items)
         }
@@ -89,8 +109,9 @@ extension OPageViewTitles: UICollectionViewDataSource{
         let _rightSeparatorColor:UIColor = self.uiConfig.rightSeparatorColor
         let _leftSeparatorColor:UIColor = self.uiConfig.leftSeparatorColor
         let _bottomSeparatorColor:UIColor = self.uiConfig.bottomSeparatorColor
+        let _textAlignment:NSTextAlignment = self.uiConfig.textAlignment
         let selectedIndicatorFactor:Float = (self.uiConfig.indicatorWidthRatio <= 0 || self.uiConfig.indicatorWidthRatio == 1 || self.uiConfig.indicatorWidthRatio > 1) ? 0 : (1 - self.uiConfig.indicatorWidthRatio)
-        let _selectedIndicatorTrailing:Float = Float(getItemSizeFromNumber(of: pages.count).width) * selectedIndicatorFactor
+        let _selectedIndicatorTrailing:Float = Float(getItemSizeFromNumber(of: pages.count, indexPath: indexPath).width) * selectedIndicatorFactor
         
         cell.configureWithData(
             OPageViewTitlesData(
@@ -106,7 +127,8 @@ extension OPageViewTitles: UICollectionViewDataSource{
             constraintTrailingIndicator: _selectedIndicatorTrailing,
             rightSeparatorColor:_rightSeparatorColor,
             leftSeparatorColor:_leftSeparatorColor,
-            bottomSeparatorColor:_bottomSeparatorColor)
+            bottomSeparatorColor:_bottomSeparatorColor,
+            textAlignment:_textAlignment)
         )
         return cell
     }
@@ -129,7 +151,7 @@ extension OPageViewTitles: UICollectionViewDelegate{
 
 extension OPageViewTitles: UICollectionViewDelegateFlowLayout{
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        return self.getItemSizeFromNumber(of: pages.count)
+    return self.getItemSizeFromNumber(of: pages.count, indexPath: indexPath)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{

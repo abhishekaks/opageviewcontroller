@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class OPage: NSObject {
+open class OPage: NSObject {
     
     public var viewController:UIViewController
     public var title:String

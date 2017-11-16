@@ -23,6 +23,7 @@ struct OPageViewTitlesData {
     let rightSeparatorColor:UIColor
     let leftSeparatorColor:UIColor
     let bottomSeparatorColor:UIColor
+    let textAlignment:NSTextAlignment
     
     init(hideBottomSeparator: Bool,
          hideRightSeparator: Bool,
@@ -36,7 +37,8 @@ struct OPageViewTitlesData {
          constraintTrailingIndicator:Float = 0,
          rightSeparatorColor:UIColor,
          leftSeparatorColor:UIColor,
-         bottomSeparatorColor:UIColor) {
+         bottomSeparatorColor:UIColor,
+         textAlignment:NSTextAlignment) {
         self.hideBottomSeparator = hideBottomSeparator
         self.hideRightSeparator = hideRightSeparator
         self.hideLeftSeparator = hideLeftSeparator
@@ -50,6 +52,7 @@ struct OPageViewTitlesData {
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
         self.bottomSeparatorColor = bottomSeparatorColor
+        self.textAlignment = textAlignment
     }
 }
 
@@ -79,6 +82,7 @@ class OPageTitleCell: UICollectionViewCell {
         leftSeparator.backgroundColor = data.leftSeparatorColor
         selectedIndicatorV.isHidden = !data.isSelected
         selectedIndicatorV.backgroundColor = data.indicatorColor
+        lblTitle.textAlignment = data.textAlignment
         lblTitle.text = data.title
         lblTitle.textColor = data.titleColor
         lblTitle.font = data.titleFont

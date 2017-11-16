@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		073BA703F065A6640E5B84C5739D6B4E /* OPageTitleCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OPageTitleCell.xib; sourceTree = "<group>"; };
 		0794590A1BC172246EEC90D7EC1B8B1D /* opageviewcontroller-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "opageviewcontroller-umbrella.h"; sourceTree = "<group>"; };
-		15946B6B5E972AA3F532456867FB96EB /* opageviewcontroller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = opageviewcontroller.framework; path = opageviewcontroller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15946B6B5E972AA3F532456867FB96EB /* opageviewcontroller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = opageviewcontroller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DABE25E6FDFCEF3F32B9C34C650964 /* Pods-opageviewcontroller_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-opageviewcontroller_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		23E90D8734C21AC7E163FA137955F3FE /* Pods-opageviewcontroller_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		25E6A4AEE867D2FBE9BDC7DDE401E3A2 /* Pods-opageviewcontroller_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-opageviewcontroller_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -53,23 +53,23 @@
 		644183A21C55E538A95D3982002F8BDA /* OPageViewTitles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageViewTitles.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		736906DB75AC069D95A9D8D9523E6A26 /* OPageViewTitleUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageViewTitleUI.swift; sourceTree = "<group>"; };
-		8482CC88FE07C4C61649A6215E5D192F /* Pods_opageviewcontroller_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_opageviewcontroller_Example.framework; path = "Pods-opageviewcontroller_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8482CC88FE07C4C61649A6215E5D192F /* Pods_opageviewcontroller_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opageviewcontroller_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DD8C56D4916004C3A8D7C80B666053 /* Pods-opageviewcontroller_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		88A4072F85DD8E46D28D47FD0C44EDDC /* Pods-opageviewcontroller_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-opageviewcontroller_Example.modulemap"; sourceTree = "<group>"; };
+		88A4072F85DD8E46D28D47FD0C44EDDC /* Pods-opageviewcontroller_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-opageviewcontroller_Example.modulemap"; sourceTree = "<group>"; };
 		8BE4704EF4E562A04D10BEB93BBBB54F /* Pods-opageviewcontroller_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-opageviewcontroller_Example-dummy.m"; sourceTree = "<group>"; };
 		8F9C879612BCD989C262FB5F12C7B0C0 /* Pods-opageviewcontroller_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		950DBEA3917EB51B40081E9444E821E4 /* Pods-opageviewcontroller_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-opageviewcontroller_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950DBEA3917EB51B40081E9444E821E4 /* Pods-opageviewcontroller_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-opageviewcontroller_Tests.modulemap"; sourceTree = "<group>"; };
 		A61C327606C5C0FED788070591C2D16A /* OPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageViewController.swift; sourceTree = "<group>"; };
 		AB9091C6280F5C78B30FCF839097011C /* Pods-opageviewcontroller_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-opageviewcontroller_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ABD743E2459511774B2546102C1AE1E7 /* opageviewcontroller.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = opageviewcontroller.modulemap; sourceTree = "<group>"; };
+		ABD743E2459511774B2546102C1AE1E7 /* opageviewcontroller.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = opageviewcontroller.modulemap; sourceTree = "<group>"; };
 		B1BAF19E201A6EE64D6549FE32051FD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B38260A11F478C390C0B4C943EE9A298 /* opageviewcontroller-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "opageviewcontroller-prefix.pch"; sourceTree = "<group>"; };
 		CC47FE72C40D9843D5124A96ED26DF3D /* OPageTitleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OPageTitleCell.swift; sourceTree = "<group>"; };
 		CE365F2D152CB50E727ADEBEA21363E0 /* Pods-opageviewcontroller_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Tests-resources.sh"; sourceTree = "<group>"; };
 		D6B68531C2D9469BD47E2719702C91B8 /* Pods-opageviewcontroller_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-opageviewcontroller_Tests-dummy.m"; sourceTree = "<group>"; };
 		DFA0A7FC3C7E9ECC434095E0FFA8B4CC /* Pods-opageviewcontroller_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-opageviewcontroller_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E04A6D7FFD9CE4DD7705F8C97B81F36B /* Pods_opageviewcontroller_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_opageviewcontroller_Tests.framework; path = "Pods-opageviewcontroller_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04A6D7FFD9CE4DD7705F8C97B81F36B /* Pods_opageviewcontroller_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opageviewcontroller_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05A7049E7B219FDF6E85DFF5E0F290A /* Pods-opageviewcontroller_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-opageviewcontroller_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F345EC01EC9791BFC72FB34CE13AE14E /* Pods-opageviewcontroller_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F9D49AEE0A514A47D16AB6E7FADA5546 /* Pods-opageviewcontroller_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-opageviewcontroller_Example-resources.sh"; sourceTree = "<group>"; };
@@ -175,7 +175,6 @@
 				61231713CC180E124255468109F9D0BC /* OPageViewTitles.xib */,
 				736906DB75AC069D95A9D8D9523E6A26 /* OPageViewTitleUI.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -195,7 +194,6 @@
 			children = (
 				44EDB24B6B3E634C32AD4A1BBE375A3E /* Classes */,
 			);
-			name = opageviewcontroller;
 			path = opageviewcontroller;
 			sourceTree = "<group>";
 		};

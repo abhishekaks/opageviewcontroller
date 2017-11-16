@@ -21,6 +21,8 @@ public struct OPageViewTitleUI {
     public var titleItemWidth:Float = Float.greatestFiniteMagnitude
     public var titleItemHeight:Float = 50
     public var indicatorWidthRatio:Float = 1
+    public var textAlignment:NSTextAlignment
+    public var flexibleTitleWidth:Bool
     
     init(rightSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
          titleColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
@@ -32,7 +34,9 @@ public struct OPageViewTitleUI {
          titleItemHeight:Float = 50,
          indicatorWidthRatio:Float = 1,
          leftSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
-         bottomSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0)) {
+         bottomSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
+         textAlignment:NSTextAlignment = .center,
+         flexibleTitleWidth:Bool = false) {
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
         self.bottomSeparatorColor = bottomSeparatorColor
@@ -45,5 +49,7 @@ public struct OPageViewTitleUI {
         self.titleItemWidth = titleItemWidth
         self.titleItemHeight = titleItemHeight
         self.indicatorWidthRatio = indicatorWidthRatio
+        self.textAlignment = textAlignment
+        self.flexibleTitleWidth = flexibleTitleWidth
     }
 }

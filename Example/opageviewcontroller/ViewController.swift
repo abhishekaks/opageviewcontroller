@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         pageController.uiConfig.rightSeparatorColor = UIColor.clear
         pageController.uiConfig.leftSeparatorColor = UIColor.clear
         pageController.uiConfig.bottomSeparatorColor = UIColor.clear
+        pageController.uiConfig.pageTitleBounds = .stretchable
         pageController.pages = pages
         
         if let navController:UINavigationController = self.navigationController{
