@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         pageController.uiConfig.leftSeparatorColor = UIColor.clear
         pageController.uiConfig.bottomSeparatorColor = UIColor.clear
         pageController.uiConfig.pageTitleBounds = .stretchable
+        pageController.uiConfig.flexibleTitleWidth = true
+        pageController.uiConfig.minimumTitleItemWidth = 120
         pageController.pages = pages
         
         if let navController:UINavigationController = self.navigationController{
@@ -64,4 +66,3 @@ class ViewController: UIViewController {
         testOPageViewController()
     }
 }
-

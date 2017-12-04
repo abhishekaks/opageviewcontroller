@@ -74,6 +74,11 @@ class OPageViewTitles: UICollectionView {
         }else{
             itemSize = defaultItemSize(for: items)
         }
+        
+        if uiConfig.minimumTitleItemWidth > 0 && itemSize.width < CGFloat(uiConfig.minimumTitleItemWidth) {
+            itemSize.width = CGFloat(uiConfig.minimumTitleItemWidth)
+        }
+        
         return itemSize
     }
     
