@@ -48,13 +48,16 @@ class ViewController: UIViewController {
         page = OPage.init(title:"VC4", viewController: vcFour)
         pages.append(page)
         
-        let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.5)
+        let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.6)
         pageController.uiConfig.rightSeparatorColor = UIColor.clear
         pageController.uiConfig.leftSeparatorColor = UIColor.clear
         pageController.uiConfig.bottomSeparatorColor = UIColor.clear
         pageController.uiConfig.pageTitleBounds = .stretchable
         pageController.uiConfig.flexibleTitleWidth = true
-        pageController.uiConfig.minimumTitleItemWidth = 120
+        pageController.uiConfig.minimumTitleItemWidth = 80
+        pageController.uiConfig.textAlignment = .left
+        pageController.uiConfig.paddingTitle = 15
+        pageController.uiConfig.leadingIndicator = 15
         pageController.pages = pages
         
         if let navController:UINavigationController = self.navigationController{

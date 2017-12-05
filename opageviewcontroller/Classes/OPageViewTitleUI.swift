@@ -24,6 +24,8 @@ public struct OPageViewTitleUI {
     public var textAlignment:NSTextAlignment
     public var flexibleTitleWidth:Bool
     public var minimumTitleItemWidth:Float = 0
+    public var paddingTitle:Float = 0
+    public var leadingIndicator:Float = 0
     
     init(rightSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
          titleColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
@@ -38,7 +40,9 @@ public struct OPageViewTitleUI {
          bottomSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
          textAlignment:NSTextAlignment = .center,
          flexibleTitleWidth:Bool = false,
-         minimumTitleItemWidth:Float = 0) {
+         minimumTitleItemWidth:Float = 0,
+         paddingTitle:Float = 0,
+         leadingIndicator:Float = 0) {
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
         self.bottomSeparatorColor = bottomSeparatorColor
@@ -54,5 +58,7 @@ public struct OPageViewTitleUI {
         self.textAlignment = textAlignment
         self.flexibleTitleWidth = flexibleTitleWidth
         self.minimumTitleItemWidth = minimumTitleItemWidth
+        self.paddingTitle = paddingTitle
+        self.leadingIndicator = leadingIndicator
     }
 }

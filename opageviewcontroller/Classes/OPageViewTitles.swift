@@ -117,6 +117,8 @@ extension OPageViewTitles: UICollectionViewDataSource{
         let _textAlignment:NSTextAlignment = self.uiConfig.textAlignment
         let selectedIndicatorFactor:Float = (self.uiConfig.indicatorWidthRatio <= 0 || self.uiConfig.indicatorWidthRatio == 1 || self.uiConfig.indicatorWidthRatio > 1) ? 0 : (1 - self.uiConfig.indicatorWidthRatio)
         let _selectedIndicatorTrailing:Float = Float(getItemSizeFromNumber(of: pages.count, indexPath: indexPath).width) * selectedIndicatorFactor
+        let _leadingIndicator:CGFloat = CGFloat(self.uiConfig.leadingIndicator)
+        let _paddingTitle:CGFloat = CGFloat(self.uiConfig.paddingTitle)
         
         cell.configureWithData(
             OPageViewTitlesData(
@@ -133,7 +135,9 @@ extension OPageViewTitles: UICollectionViewDataSource{
             rightSeparatorColor:_rightSeparatorColor,
             leftSeparatorColor:_leftSeparatorColor,
             bottomSeparatorColor:_bottomSeparatorColor,
-            textAlignment:_textAlignment)
+            textAlignment:_textAlignment,
+            leadingIndicator:_leadingIndicator,
+            paddingTitle:_paddingTitle)
         )
         return cell
     }
@@ -145,10 +149,12 @@ extension OPageViewTitles: UICollectionViewDelegate{
             let prevSelectedIndex:Int = selectedIndex
             selectedIndex = indexPath.item
             self.reloadItems(at: [IndexPath.init(item: prevSelectedIndex, section: 0), IndexPath.init(item: selectedIndex, section: 0)])
-            guard let _ = customDelegate?.didSelectTitleAtIndexPath(indexPath, orderAscending:selectedIndex > prevSelectedIndex) else{return}
-            customDelegate!.didSelectTitleAtIndexPath(indexPath, orderAscending:selectedIndex > prevSelectedIndex)
-            if beyondBoundsMode() == true {
-                collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
+            
+            if let _delegate = customDelegate {
+                _delegate.didSelectTitleAtIndexPath(indexPath, orderAscending:selectedIndex > prevSelectedIndex)
+                if beyondBoundsMode() == true {
+                    collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
+                }
             }
         }
     }

@@ -24,7 +24,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-Br-KPo">
-                        <rect key="frame" x="77" y="15.5" width="39.5" height="19"/>
+                        <rect key="frame" x="0.0" y="15.5" width="193" height="19"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -69,18 +69,21 @@
                 <constraint firstAttribute="bottom" secondItem="kuV-fv-wpm" secondAttribute="bottom" id="KDR-Ka-UTB"/>
                 <constraint firstAttribute="trailing" secondItem="kmV-Ob-yy1" secondAttribute="trailing" id="O9F-iK-f01"/>
                 <constraint firstItem="kuV-fv-wpm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QOO-gG-nuF"/>
-                <constraint firstItem="bAj-Br-KPo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tnl-o0-dJz"/>
+                <constraint firstItem="bAj-Br-KPo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tnl-o0-dJz"/>
                 <constraint firstAttribute="bottom" secondItem="kmV-Ob-yy1" secondAttribute="bottom" id="Ws2-Ot-SyI"/>
                 <constraint firstAttribute="bottom" secondItem="iFq-kJ-Ozd" secondAttribute="bottom" id="XBz-s3-CDa"/>
                 <constraint firstAttribute="trailing" secondItem="iFq-kJ-Ozd" secondAttribute="trailing" id="Yq0-FX-Tsq"/>
-                <constraint firstItem="bAj-Br-KPo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="aBy-tl-tbS"/>
-                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bAj-Br-KPo" secondAttribute="trailing" id="oEm-6f-ZOZ"/>
+                <constraint firstAttribute="trailing" secondItem="bAj-Br-KPo" secondAttribute="trailing" id="oEm-6f-ZOZ"/>
                 <constraint firstAttribute="bottom" secondItem="7cY-1J-9lD" secondAttribute="bottom" id="s27-EW-aOf"/>
             </constraints>
             <size key="customSize" width="193" height="50"/>
             <connections>
                 <outlet property="bottomSeparator" destination="kmV-Ob-yy1" id="FXg-ZQ-gew"/>
+                <outlet property="constraintBottomSeparatorLeading" destination="DEq-af-QGU" id="OkD-93-Mna"/>
+                <outlet property="constraintLeadingIndicator" destination="2CI-TM-B1d" id="ccd-20-mB5"/>
+                <outlet property="constraintLeadingTitle" destination="Tnl-o0-dJz" id="GzS-NC-lQh"/>
                 <outlet property="constraintTrailingIndicator" destination="IWL-5T-Hb6" id="jP9-ls-BPg"/>
+                <outlet property="constraintTrailingTitle" destination="oEm-6f-ZOZ" id="mB1-AU-pYw"/>
                 <outlet property="lblTitle" destination="bAj-Br-KPo" id="xDI-SM-0xx"/>
                 <outlet property="leftSeparator" destination="kuV-fv-wpm" id="qAf-MX-tXe"/>
                 <outlet property="rightSeparator" destination="iFq-kJ-Ozd" id="gGA-rf-1sH"/>

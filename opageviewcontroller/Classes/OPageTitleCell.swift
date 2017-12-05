@@ -24,6 +24,8 @@ struct OPageViewTitlesData {
     let leftSeparatorColor:UIColor
     let bottomSeparatorColor:UIColor
     let textAlignment:NSTextAlignment
+    let leadingIndicator:CGFloat
+    let paddingTitle:CGFloat
     
     init(hideBottomSeparator: Bool,
          hideRightSeparator: Bool,
@@ -38,7 +40,9 @@ struct OPageViewTitlesData {
          rightSeparatorColor:UIColor,
          leftSeparatorColor:UIColor,
          bottomSeparatorColor:UIColor,
-         textAlignment:NSTextAlignment) {
+         textAlignment:NSTextAlignment,
+         leadingIndicator:CGFloat = 0,
+         paddingTitle:CGFloat = 0) {
         self.hideBottomSeparator = hideBottomSeparator
         self.hideRightSeparator = hideRightSeparator
         self.hideLeftSeparator = hideLeftSeparator
@@ -53,6 +57,8 @@ struct OPageViewTitlesData {
         self.leftSeparatorColor = leftSeparatorColor
         self.bottomSeparatorColor = bottomSeparatorColor
         self.textAlignment = textAlignment
+        self.leadingIndicator = leadingIndicator
+        self.paddingTitle = paddingTitle
     }
 }
 
@@ -63,6 +69,10 @@ class OPageTitleCell: UICollectionViewCell {
     @IBOutlet weak var rightSeparator: UIView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var constraintTrailingIndicator: NSLayoutConstraint!
+    @IBOutlet weak var constraintLeadingTitle: NSLayoutConstraint!
+    @IBOutlet weak var constraintTrailingTitle: NSLayoutConstraint!
+    @IBOutlet weak var constraintBottomSeparatorLeading: NSLayoutConstraint!
+    @IBOutlet weak var constraintLeadingIndicator: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -70,10 +80,15 @@ class OPageTitleCell: UICollectionViewCell {
     }
     
     private func setupCell(){
+        constraintLeadingTitle.constant = 20
+        constraintTrailingTitle.constant = 20
     }
     
     public func configureWithData(_ data:OPageViewTitlesData) {
         constraintTrailingIndicator.constant = CGFloat(data.constraintTrailingIndicator)
+        constraintLeadingTitle.constant = data.paddingTitle
+        constraintTrailingTitle.constant = data.paddingTitle
+        constraintLeadingIndicator.constant = data.leadingIndicator
         bottomSeparator.isHidden = data.hideBottomSeparator
         bottomSeparator.backgroundColor = data.bottomSeparatorColor
         rightSeparator.isHidden = data.hideRightSeparator
