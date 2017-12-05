@@ -79,6 +79,8 @@ class OPageViewTitles: UICollectionView {
             itemSize.width = CGFloat(uiConfig.minimumTitleItemWidth)
         }
         
+        itemSize.width = itemSize.width + ( 2 * CGFloat(uiConfig.paddingTitle) )
+        
         return itemSize
     }
     

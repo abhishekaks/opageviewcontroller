@@ -27,25 +27,31 @@ class ViewController: UIViewController {
         // First View Controller
         let vcOne:UIViewController = UIViewController.init()
         vcOne.view.backgroundColor = UIColor.red
-        var page:OPage = OPage.init(title:"VC1", viewController: vcOne)
+        var page:OPage = OPage.init(title:"Food", viewController: vcOne)
         pages.append(page)
         
         // Second View Controller
         let vcTwo:UIViewController = UIViewController.init()
         vcTwo.view.backgroundColor = UIColor.green
-        page = OPage.init(title:"VC2", viewController: vcTwo)
+        page = OPage.init(title:"Elements Mall", viewController: vcTwo)
         pages.append(page)
         
         // Third View Controller
         let vcThree:UIViewController = UIViewController.init()
         vcThree.view.backgroundColor = UIColor.blue
-        page = OPage.init(title:"VC3", viewController: vcThree)
+        page = OPage.init(title:"My Departmental Store", viewController: vcThree)
         pages.append(page)
         
         // Fourth View Controller
         let vcFour:UIViewController = UIViewController.init()
         vcFour.view.backgroundColor = UIColor.cyan
-        page = OPage.init(title:"VC4", viewController: vcFour)
+        page = OPage.init(title:"Some Supermarket", viewController: vcFour)
+        pages.append(page)
+        
+        // Fifth View Controller
+        let vcFive:UIViewController = UIViewController.init()
+        vcFive.view.backgroundColor = UIColor.cyan
+        page = OPage.init(title:"Fashionista", viewController: vcFive)
         pages.append(page)
         
         let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.6)
@@ -54,10 +60,10 @@ class ViewController: UIViewController {
         pageController.uiConfig.bottomSeparatorColor = UIColor.clear
         pageController.uiConfig.pageTitleBounds = .stretchable
         pageController.uiConfig.flexibleTitleWidth = true
-        pageController.uiConfig.minimumTitleItemWidth = 80
+        pageController.uiConfig.minimumTitleItemWidth = 50
         pageController.uiConfig.textAlignment = .left
-        pageController.uiConfig.paddingTitle = 15
-        pageController.uiConfig.leadingIndicator = 15
+        pageController.uiConfig.paddingTitle = 10
+        pageController.uiConfig.leadingIndicator = 10
         pageController.pages = pages
         
         if let navController:UINavigationController = self.navigationController{
