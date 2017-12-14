@@ -31,7 +31,7 @@ open class OPageViewController: UIViewController {
 
     private var pageVC:UIPageViewController?
     fileprivate var titlesView:OPageViewTitles?
-    fileprivate(set) var currentPage:Int = 0
+    fileprivate(set) public var currentPage:Int = 0
     
     public var pages:[OPage] = [OPage]()
     public var pageType:OPageViewControllerType = .cyclic
