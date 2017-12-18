@@ -66,6 +66,10 @@ class ViewController: UIViewController {
         pageController.uiConfig.leadingIndicator = 10
         pageController.pages = pages
         
+        // Different highlighted Color for a Particular Tab
+        page.uiConfig = pageController.uiConfig
+        page.uiConfig?.highlightedColor = UIColor.red
+        
         if let navController:UINavigationController = self.navigationController{
             navController.pushViewController(pageController, animated: true)
         }

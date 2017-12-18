@@ -106,21 +106,28 @@ extension OPageViewTitles: UICollectionViewDataSource{
         let cell:OPageTitleCell = collectionView.dequeueReusableCell(withReuseIdentifier: OPageViewTitles.kTitleCellIdentifier, for: indexPath) as! OPageTitleCell
         
         let page:OPage = pages[indexPath.item]
+        
         let _isSelected:Bool = (indexPath.item == selectedIndex)
         let _hideBottomSeparator:Bool = _isSelected
         let _hideRightSeparator:Bool = true
         let _hideLeftSeparator:Bool = (indexPath.item == 0)
-        let _titleColor:UIColor = _isSelected ? self.uiConfig.highlightedTitleColor :self.uiConfig.titleColor
-        let _titleFont:UIFont = _isSelected ? self.uiConfig.highlightedFont :self.uiConfig.font
-        let _indicatorColor:UIColor = _isSelected ? self.uiConfig.highlightedColor :self.uiConfig.titleColor
-        let _rightSeparatorColor:UIColor = self.uiConfig.rightSeparatorColor
-        let _leftSeparatorColor:UIColor = self.uiConfig.leftSeparatorColor
-        let _bottomSeparatorColor:UIColor = self.uiConfig.bottomSeparatorColor
-        let _textAlignment:NSTextAlignment = self.uiConfig.textAlignment
-        let selectedIndicatorFactor:Float = (self.uiConfig.indicatorWidthRatio <= 0 || self.uiConfig.indicatorWidthRatio == 1 || self.uiConfig.indicatorWidthRatio > 1) ? 0 : (1 - self.uiConfig.indicatorWidthRatio)
+        
+        var _uiConfig:OPageViewTitleUI = self.uiConfig
+        if let pageSpecUIConfig:OPageViewTitleUI = page.uiConfig {
+            _uiConfig = pageSpecUIConfig
+        }
+        
+        let _titleColor:UIColor = _isSelected ? _uiConfig.highlightedTitleColor :_uiConfig.titleColor
+        let _titleFont:UIFont = _isSelected ? _uiConfig.highlightedFont :_uiConfig.font
+        let _indicatorColor:UIColor = _isSelected ? _uiConfig.highlightedColor :_uiConfig.titleColor
+        let _rightSeparatorColor:UIColor = _uiConfig.rightSeparatorColor
+        let _leftSeparatorColor:UIColor = _uiConfig.leftSeparatorColor
+        let _bottomSeparatorColor:UIColor = _uiConfig.bottomSeparatorColor
+        let _textAlignment:NSTextAlignment = _uiConfig.textAlignment
+        let selectedIndicatorFactor:Float = (_uiConfig.indicatorWidthRatio <= 0 || _uiConfig.indicatorWidthRatio == 1 || _uiConfig.indicatorWidthRatio > 1) ? 0 : (1 - _uiConfig.indicatorWidthRatio)
         let _selectedIndicatorTrailing:Float = Float(getItemSizeFromNumber(of: pages.count, indexPath: indexPath).width) * selectedIndicatorFactor
-        let _leadingIndicator:CGFloat = CGFloat(self.uiConfig.leadingIndicator)
-        let _paddingTitle:CGFloat = CGFloat(self.uiConfig.paddingTitle)
+        let _leadingIndicator:CGFloat = CGFloat(_uiConfig.leadingIndicator)
+        let _paddingTitle:CGFloat = CGFloat(_uiConfig.paddingTitle)
         
         cell.configureWithData(
             OPageViewTitlesData(

@@ -12,6 +12,7 @@ open class OPage: NSObject {
     
     public var viewController:UIViewController
     public var title:String
+    public var uiConfig:OPageViewTitleUI?
     
     public init(title:String, viewController:UIViewController) {
         self.viewController = viewController
