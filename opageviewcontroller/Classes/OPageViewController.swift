@@ -30,7 +30,7 @@ public enum OPageTitleBounds {
 open class OPageViewController: UIViewController {
 
     private var pageVC:UIPageViewController?
-    private var viewControllerSpaceToTab:Float = 0
+    /*private var viewControllerSpaceToTab:Float = 0*/
     fileprivate var titlesView:OPageViewTitles?
     fileprivate(set) public var currentPage:Int = 0
     
@@ -44,12 +44,12 @@ open class OPageViewController: UIViewController {
         setupView()
     }
     
-    public init(pageTitleBounds:OPageTitleBounds = .fixed, titleItemWidth:Float = 90, titleItemHeight:Float = 50, indicatorWidthRatio:Float = 1, viewControllerSpaceToTab:Float = 7) {
+    public init(pageTitleBounds:OPageTitleBounds = .fixed, titleItemWidth:Float = 90, titleItemHeight:Float = 50, indicatorWidthRatio:Float = 1/*, viewControllerSpaceToTab:Float = 7*/) {
         uiConfig.pageTitleBounds = pageTitleBounds
         uiConfig.titleItemWidth = titleItemWidth
         uiConfig.titleItemHeight = titleItemHeight
         uiConfig.indicatorWidthRatio = indicatorWidthRatio
-        self.viewControllerSpaceToTab = viewControllerSpaceToTab
+        /*self.viewControllerSpaceToTab = viewControllerSpaceToTab*/
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -98,7 +98,7 @@ open class OPageViewController: UIViewController {
         pageVC!.view.translatesAutoresizingMaskIntoConstraints = false
         
         let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[pageVC]-0-|", options: [], metrics: nil, views: ["pageVC":pageVC!.view])
-        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: String(format: "V:[titlesView]-%0.lf-[pageVC]-0-|", viewControllerSpaceToTab), options: [], metrics: nil, views: ["pageVC":pageVC!.view, "titlesView":titlesView!])
+        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:[titlesView]-7-[pageVC]-0-|"/*String(format: "V:[titlesView]-%0.lf-[pageVC]-0-|", viewControllerSpaceToTab)*/, options: [], metrics: nil, views: ["pageVC":pageVC!.view, "titlesView":titlesView!])
         
         let allConstraints = hConstraints + vConstraints
         NSLayoutConstraint.activate(allConstraints)
