@@ -8,6 +8,12 @@
 
 import UIKit
 
+public enum SelectedTabPosition {
+    case left
+    case center
+    case right
+}
+
 public struct OPageViewTitleUI {
     public var rightSeparatorColor: UIColor
     public var leftSeparatorColor: UIColor
@@ -26,6 +32,7 @@ public struct OPageViewTitleUI {
     public var minimumTitleItemWidth:Float = 0
     public var paddingTitle:Float = 0
     public var leadingIndicator:Float = 0
+    public var selectedTabPosition:SelectedTabPosition = .center
     
     init(rightSeparatorColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
          titleColor: UIColor = UIColor(red: 148.0/255.0, green: 148.0/255.0, blue: 148.0/255.0, alpha: 1.0),
@@ -42,7 +49,8 @@ public struct OPageViewTitleUI {
          flexibleTitleWidth:Bool = false,
          minimumTitleItemWidth:Float = 0,
          paddingTitle:Float = 0,
-         leadingIndicator:Float = 0) {
+         leadingIndicator:Float = 0,
+         selectedTabPosition:SelectedTabPosition = .center) {
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
         self.bottomSeparatorColor = bottomSeparatorColor
@@ -60,5 +68,6 @@ public struct OPageViewTitleUI {
         self.minimumTitleItemWidth = minimumTitleItemWidth
         self.paddingTitle = paddingTitle
         self.leadingIndicator = leadingIndicator
+        self.selectedTabPosition = selectedTabPosition
     }
 }

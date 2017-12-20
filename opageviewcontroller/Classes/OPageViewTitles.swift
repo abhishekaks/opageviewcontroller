@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol OPageViewTitlesDelegate {
+protocol OPageViewTitlesDelegate:class {
     func didSelectTitleAtIndexPath(_ indexPath:IndexPath, orderAscending:Bool)
 }
 
@@ -23,7 +23,7 @@ class OPageViewTitles: UICollectionView {
             self.reloadData()
         }
     }
-    public var customDelegate:OPageViewTitlesDelegate?
+    public weak var customDelegate:OPageViewTitlesDelegate?
     public var uiConfig:OPageViewTitleUI = OPageViewTitleUI(){
         didSet{
             self.isScrollEnabled = beyondBoundsMode()
@@ -95,6 +95,17 @@ class OPageViewTitles: UICollectionView {
     fileprivate func beyondBoundsMode() -> Bool {
         return uiConfig.pageTitleBounds == .stretchable
     }
+    
+    fileprivate func scrollPosition(_ selectedTabPosition:SelectedTabPosition) -> UICollectionViewScrollPosition {
+        switch selectedTabPosition {
+        case .center:
+            return UICollectionViewScrollPosition.centeredHorizontally
+        case .left:
+            return UICollectionViewScrollPosition.left
+        case .right:
+            return UICollectionViewScrollPosition.right
+        }
+    }
 }
 
 extension OPageViewTitles: UICollectionViewDataSource{
@@ -162,7 +173,7 @@ extension OPageViewTitles: UICollectionViewDelegate{
             if let _delegate = customDelegate {
                 _delegate.didSelectTitleAtIndexPath(indexPath, orderAscending:selectedIndex > prevSelectedIndex)
                 if beyondBoundsMode() == true {
-                    collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
+                    collectionView.scrollToItem(at: indexPath, at: scrollPosition(uiConfig.selectedTabPosition), animated: true)
                 }
             }
         }

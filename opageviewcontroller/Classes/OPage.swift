@@ -10,7 +10,7 @@ import UIKit
 
 open class OPage: NSObject {
     
-    public var viewController:UIViewController
+    public var viewController:UIViewController?
     public var title:String
     public var uiConfig:OPageViewTitleUI?
     
