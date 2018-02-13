@@ -79,7 +79,7 @@ class OPageViewTitles: UICollectionView {
             itemSize.width = CGFloat(uiConfig.minimumTitleItemWidth)
         }
         
-        itemSize.width = itemSize.width + ( 2 * CGFloat(uiConfig.paddingTitle) )
+        itemSize.width = CGFloat(floorf(Float(itemSize.width))) + ( 2 * CGFloat(uiConfig.paddingTitle) )
         
         return itemSize
     }
@@ -135,8 +135,9 @@ extension OPageViewTitles: UICollectionViewDataSource{
         let _leftSeparatorColor:UIColor = _uiConfig.leftSeparatorColor
         let _bottomSeparatorColor:UIColor = _uiConfig.bottomSeparatorColor
         let _textAlignment:NSTextAlignment = _uiConfig.textAlignment
-        let selectedIndicatorFactor:Float = (_uiConfig.indicatorWidthRatio <= 0 || _uiConfig.indicatorWidthRatio == 1 || _uiConfig.indicatorWidthRatio > 1) ? 0 : (1 - _uiConfig.indicatorWidthRatio)
-        let _selectedIndicatorTrailing:Float = Float(getItemSizeFromNumber(of: pages.count, indexPath: indexPath).width) * selectedIndicatorFactor
+        let selectedIndicatorFactor:Float = (_uiConfig.indicatorWidthRatio <= 0 || _uiConfig.indicatorWidthRatio == 1 || _uiConfig.indicatorWidthRatio > 1) ? 0 : _uiConfig.indicatorWidthRatio
+        let itemSize:CGSize = getItemSizeFromNumber(of: pages.count, indexPath: indexPath)
+        let indicatorWidth:Float = floorf(Float(itemSize.width) * selectedIndicatorFactor)
         let _leadingIndicator:CGFloat = CGFloat(_uiConfig.leadingIndicator)
         let _paddingTitle:CGFloat = CGFloat(_uiConfig.paddingTitle)
         
@@ -151,13 +152,13 @@ extension OPageViewTitles: UICollectionViewDataSource{
             indicatorColor: _indicatorColor,
             title:page.title,
             model : page,
-            constraintTrailingIndicator: _selectedIndicatorTrailing,
             rightSeparatorColor:_rightSeparatorColor,
             leftSeparatorColor:_leftSeparatorColor,
             bottomSeparatorColor:_bottomSeparatorColor,
             textAlignment:_textAlignment,
             leadingIndicator:_leadingIndicator,
-            paddingTitle:_paddingTitle)
+            paddingTitle:_paddingTitle,
+            constraintWidthIndicator:indicatorWidth)
         )
         return cell
     }

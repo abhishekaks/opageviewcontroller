@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         page = OPage.init(title:"Fashionista", viewController: vcFive)
         pages.append(page)
         
-        let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.6)
+        let pageController: OPageViewController = OPageViewController.init(pageTitleBounds: .stretchable, titleItemWidth: 120, titleItemHeight: 50, indicatorWidthRatio: 0.4)
         pageController.uiConfig.rightSeparatorColor = UIColor.clear
         pageController.uiConfig.leftSeparatorColor = UIColor.clear
         pageController.uiConfig.bottomSeparatorColor = UIColor.clear

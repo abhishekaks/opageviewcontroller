@@ -19,7 +19,7 @@ struct OPageViewTitlesData {
     let indicatorColor:UIColor
     let title:String
     let model : AnyObject?
-    let constraintTrailingIndicator:Float
+    let constraintWidthIndicator:Float
     let rightSeparatorColor:UIColor
     let leftSeparatorColor:UIColor
     let bottomSeparatorColor:UIColor
@@ -36,13 +36,13 @@ struct OPageViewTitlesData {
          indicatorColor:UIColor,
          title:String,
          model : AnyObject?,
-         constraintTrailingIndicator:Float = 0,
          rightSeparatorColor:UIColor,
          leftSeparatorColor:UIColor,
          bottomSeparatorColor:UIColor,
          textAlignment:NSTextAlignment,
          leadingIndicator:CGFloat = 0,
-         paddingTitle:CGFloat = 0) {
+         paddingTitle:CGFloat = 0,
+         constraintWidthIndicator:Float) {
         self.hideBottomSeparator = hideBottomSeparator
         self.hideRightSeparator = hideRightSeparator
         self.hideLeftSeparator = hideLeftSeparator
@@ -52,13 +52,13 @@ struct OPageViewTitlesData {
         self.indicatorColor = indicatorColor
         self.title = title
         self.model = model
-        self.constraintTrailingIndicator = constraintTrailingIndicator
         self.rightSeparatorColor = rightSeparatorColor
         self.leftSeparatorColor = leftSeparatorColor
         self.bottomSeparatorColor = bottomSeparatorColor
         self.textAlignment = textAlignment
         self.leadingIndicator = leadingIndicator
         self.paddingTitle = paddingTitle
+        self.constraintWidthIndicator = constraintWidthIndicator
     }
 }
 
@@ -73,6 +73,7 @@ class OPageTitleCell: UICollectionViewCell {
     @IBOutlet weak var constraintTrailingTitle: NSLayoutConstraint!
     @IBOutlet weak var constraintBottomSeparatorLeading: NSLayoutConstraint!
     @IBOutlet weak var constraintLeadingIndicator: NSLayoutConstraint!
+    @IBOutlet weak var constraintWidthIndicator: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -85,7 +86,7 @@ class OPageTitleCell: UICollectionViewCell {
     }
     
     public func configureWithData(_ data:OPageViewTitlesData) {
-        constraintTrailingIndicator.constant = CGFloat(data.constraintTrailingIndicator)
+        constraintWidthIndicator.constant = CGFloat(data.constraintWidthIndicator)
         constraintLeadingTitle.constant = data.paddingTitle
         constraintTrailingTitle.constant = data.paddingTitle
         constraintLeadingIndicator.constant = data.leadingIndicator

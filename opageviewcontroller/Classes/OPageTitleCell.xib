@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -34,6 +34,7 @@
                         <color key="backgroundColor" red="1" green="0.37969697899999999" blue="0.14545445200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="3" id="O78-Vr-kV1"/>
+                            <constraint firstAttribute="width" constant="193" id="pUf-u2-H7q"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmV-Ob-yy1">
@@ -65,7 +66,6 @@
                 <constraint firstItem="iFq-kJ-Ozd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6YN-2e-Dfu"/>
                 <constraint firstItem="bAj-Br-KPo" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="81k-te-1pj"/>
                 <constraint firstItem="kmV-Ob-yy1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DEq-af-QGU"/>
-                <constraint firstAttribute="trailing" secondItem="7cY-1J-9lD" secondAttribute="trailing" id="IWL-5T-Hb6"/>
                 <constraint firstAttribute="bottom" secondItem="kuV-fv-wpm" secondAttribute="bottom" id="KDR-Ka-UTB"/>
                 <constraint firstAttribute="trailing" secondItem="kmV-Ob-yy1" secondAttribute="trailing" id="O9F-iK-f01"/>
                 <constraint firstItem="kuV-fv-wpm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QOO-gG-nuF"/>
@@ -82,8 +82,8 @@
                 <outlet property="constraintBottomSeparatorLeading" destination="DEq-af-QGU" id="OkD-93-Mna"/>
                 <outlet property="constraintLeadingIndicator" destination="2CI-TM-B1d" id="ccd-20-mB5"/>
                 <outlet property="constraintLeadingTitle" destination="Tnl-o0-dJz" id="GzS-NC-lQh"/>
-                <outlet property="constraintTrailingIndicator" destination="IWL-5T-Hb6" id="jP9-ls-BPg"/>
                 <outlet property="constraintTrailingTitle" destination="oEm-6f-ZOZ" id="mB1-AU-pYw"/>
+                <outlet property="constraintWidthIndicator" destination="pUf-u2-H7q" id="ubR-ms-r48"/>
                 <outlet property="lblTitle" destination="bAj-Br-KPo" id="xDI-SM-0xx"/>
                 <outlet property="leftSeparator" destination="kuV-fv-wpm" id="qAf-MX-tXe"/>
                 <outlet property="rightSeparator" destination="iFq-kJ-Ozd" id="gGA-rf-1sH"/>
