@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'opageviewcontroller'
-  s.version          = '1.0.20'
+  s.version          = '1.0.21'
   s.summary          = 'OPageViewControler lets you embed multiple UIViewControllers.'
 
   s.description      = <<-DESC
@@ -16,6 +16,7 @@ OPageViewControler lets you embed multiple UIViewControllers and access them bas
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
   s.source_files = 'opageviewcontroller/Classes/**/*'
 
