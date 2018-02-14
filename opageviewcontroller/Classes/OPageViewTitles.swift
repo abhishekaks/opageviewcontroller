@@ -63,9 +63,9 @@ class OPageViewTitles: UICollectionView {
             if uiConfig.flexibleTitleWidth == true {
                 var titleSize:CGSize = CGSize.zero
                 if selectedIndex == indexPath.item {
-                    titleSize = (((pages[indexPath.item]).title) as NSString).size(attributes: [NSFontAttributeName: uiConfig.highlightedFont])
+                    titleSize = (((pages[indexPath.item]).title) as NSString).size(withAttributes: [NSAttributedStringKey.font: uiConfig.highlightedFont])
                 }else {
-                    titleSize = (((pages[indexPath.item]).title) as NSString).size(attributes: [NSFontAttributeName: uiConfig.font])
+                    titleSize = (((pages[indexPath.item]).title) as NSString).size(withAttributes: [NSAttributedStringKey.font: uiConfig.font])
                 }
                 itemSize = CGSize(width: titleSize.width + padding, height: CGFloat(height))
             }else{
