@@ -40,6 +40,10 @@ class OPageViewTitles: UICollectionView {
         setupView()
     }
     
+    public func setInitialSelectedIndex(_ index:Int){
+        self.selectedIndex = index;
+    }
+    
     private func setupView(){
         registerCells()
         
