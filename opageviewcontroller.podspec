@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'opageviewcontroller'
-  s.version          = '1.0.21'
+  s.version          = '1.0.22'
   s.summary          = 'OPageViewControler lets you embed multiple UIViewControllers.'
 
   s.description      = <<-DESC
