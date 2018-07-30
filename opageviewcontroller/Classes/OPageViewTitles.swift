@@ -27,21 +27,17 @@ class OPageViewTitles: UICollectionView {
     public var uiConfig:OPageViewTitleUI = OPageViewTitleUI(){
         didSet{
             self.isScrollEnabled = beyondBoundsMode()
-//            if let flowLayout:UICollectionViewFlowLayout = self.collectionViewLayout as? UICollectionViewFlowLayout {
-//                if #available(iOS 10.0, *) {
-//                    flowLayout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
-//                }
-//            }
+            //            if let flowLayout:UICollectionViewFlowLayout = self.collectionViewLayout as? UICollectionViewFlowLayout {
+            //                if #available(iOS 10.0, *) {
+            //                    flowLayout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+            //                }
+            //            }
         }
     }
     
     public override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
-    }
-    
-    public func setInitialSelectedIndex(_ index:Int){
-        self.selectedIndex = index;
     }
     
     private func setupView(){
@@ -95,7 +91,7 @@ class OPageViewTitles: UICollectionView {
     fileprivate func defaultItemSize(for items:Int) -> CGSize {
         return CGSize(width:self.bounds.width / CGFloat(items), height:self.bounds.height)
     }
-        
+    
     fileprivate func beyondBoundsMode() -> Bool {
         return uiConfig.pageTitleBounds == .stretchable
     }
@@ -147,22 +143,22 @@ extension OPageViewTitles: UICollectionViewDataSource{
         
         cell.configureWithData(
             OPageViewTitlesData(
-            hideBottomSeparator: _hideBottomSeparator,
-            hideRightSeparator: _hideRightSeparator,
-            hideLeftSeparator: _hideLeftSeparator,
-            isSelected:_isSelected,
-            titleColor:_titleColor,
-            titleFont:_titleFont,
-            indicatorColor: _indicatorColor,
-            title:page.title,
-            model : page,
-            rightSeparatorColor:_rightSeparatorColor,
-            leftSeparatorColor:_leftSeparatorColor,
-            bottomSeparatorColor:_bottomSeparatorColor,
-            textAlignment:_textAlignment,
-            leadingIndicator:_leadingIndicator,
-            paddingTitle:_paddingTitle,
-            constraintWidthIndicator:indicatorWidth)
+                hideBottomSeparator: _hideBottomSeparator,
+                hideRightSeparator: _hideRightSeparator,
+                hideLeftSeparator: _hideLeftSeparator,
+                isSelected:_isSelected,
+                titleColor:_titleColor,
+                titleFont:_titleFont,
+                indicatorColor: _indicatorColor,
+                title:page.title,
+                model : page,
+                rightSeparatorColor:_rightSeparatorColor,
+                leftSeparatorColor:_leftSeparatorColor,
+                bottomSeparatorColor:_bottomSeparatorColor,
+                textAlignment:_textAlignment,
+                leadingIndicator:_leadingIndicator,
+                paddingTitle:_paddingTitle,
+                constraintWidthIndicator:indicatorWidth)
         )
         return cell
     }
@@ -187,7 +183,7 @@ extension OPageViewTitles: UICollectionViewDelegate{
 
 extension OPageViewTitles: UICollectionViewDelegateFlowLayout{
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-    return self.getItemSizeFromNumber(of: pages.count, indexPath: indexPath)
+        return self.getItemSizeFromNumber(of: pages.count, indexPath: indexPath)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{

@@ -28,9 +28,8 @@ public enum OPageTitleBounds {
 }
 
 open class OPageViewController: UIViewController {
-
+    
     private var pageVC:UIPageViewController?
-    private var loadInitialPage:Int;
     /*private var viewControllerSpaceToTab:Float = 0*/
     fileprivate var titlesView:OPageViewTitles?
     fileprivate(set) public var currentPage:Int = 0
@@ -39,24 +38,22 @@ open class OPageViewController: UIViewController {
     public var pageType:OPageViewControllerType = .cyclic
     public var uiConfig:OPageViewTitleUI = OPageViewTitleUI()
     public weak var delegate:OPageViewControllerDelegate?
-
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
     
-    public init(pageTitleBounds:OPageTitleBounds = .fixed, titleItemWidth:Float = 90, titleItemHeight:Float = 50, indicatorWidthRatio:Float = 1, loadInitialPage:Int = 0/*, viewControllerSpaceToTab:Float = 7*/) {
+    public init(pageTitleBounds:OPageTitleBounds = .fixed, titleItemWidth:Float = 90, titleItemHeight:Float = 50, indicatorWidthRatio:Float = 1/*, viewControllerSpaceToTab:Float = 7*/) {
         uiConfig.pageTitleBounds = pageTitleBounds
         uiConfig.titleItemWidth = titleItemWidth
         uiConfig.titleItemHeight = titleItemHeight
         uiConfig.indicatorWidthRatio = indicatorWidthRatio
         /*self.viewControllerSpaceToTab = viewControllerSpaceToTab*/
-        self.loadInitialPage = loadInitialPage;
         super.init(nibName: nil, bundle: nil)
     }
     
     public required init?(coder aDecoder: NSCoder) {
-        self.loadInitialPage = 0;
         super.init(coder: aDecoder)
     }
     
@@ -74,16 +71,11 @@ open class OPageViewController: UIViewController {
         }
     }
     
-    public func setLoadInitialPage(_ initialPageIndex:Int){
-        self.loadInitialPage = initialPageIndex;
-    }
-    
     private func layoutTitleView(){
         titlesView = Bundle(for: OPageViewTitles.classForCoder()).loadNibNamed("OPageViewTitles", owner: self, options: nil)?.first as? OPageViewTitles
         titlesView!.translatesAutoresizingMaskIntoConstraints = false
         titlesView!.pages = pages
         titlesView!.uiConfig = uiConfig
-        titlesView!.setInitialSelectedIndex(sanitizedDefaultIndex())
         titlesView!.customDelegate = self
         self.view.addSubview(titlesView!)
         
@@ -112,15 +104,7 @@ open class OPageViewController: UIViewController {
         NSLayoutConstraint.activate(allConstraints)
         
         // Add Default View Controllers
-        showPage(pages[sanitizedDefaultIndex()], ascending: true)
-    }
-    
-    private func sanitizedDefaultIndex() -> Int{
-        var initialPage:Int = self.loadInitialPage
-        if initialPage < 0 || initialPage >= pages.count {
-            initialPage = 0
-        }
-        return initialPage
+        showPage(pages.first!, ascending: true)
     }
     
     fileprivate func viewControllerAtPage(_ page:Int) -> UIViewController?{
